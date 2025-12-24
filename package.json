@@ -1,17 +1,22 @@
 {
   "name": "backend",
   "version": "1.0.0",
-  "main": "server.js",
+  "main": "page/server.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node  page/server.js",
-    "dev": "nodemon page/server.js"
+    "start": "node page/server.js",
+    "dev": "nodemon page/server.js",
+    "build": "echo 'Build completed - no build step required for Node.js'",
+    "vercel-build": "npm run build"
   },
-  "keywords": [],
+  "keywords": ["nodejs", "express", "mongodb", "vercel"],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "E-commerce backend API for Vercel deployment",
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "devDependencies": {
     "nodemon": "^3.1.10"
   },
